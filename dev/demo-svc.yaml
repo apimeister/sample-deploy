@@ -17,6 +17,7 @@ spec:
       containers:
       - name: demo-svc
         image: europe-docker.pkg.dev/mediasaturn-demo/demo/demo-svc:1.0
+        imagePullPolicy: always
         env:
         - name: tibco.clientVar.EmsServer
           value: "tcp://ems:7222"
