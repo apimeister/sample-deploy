@@ -22,6 +22,7 @@ spec:
         volumeMounts:
         - name: ems-config
           mountPath: "/home/tibco/queues.conf"
+          subPath: "queues.conf"
           readOnly: true
       volumes:
       - name: ems-config
