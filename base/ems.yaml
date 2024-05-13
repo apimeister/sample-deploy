@@ -19,17 +19,17 @@ spec:
         image: europe-docker.pkg.dev/mediasaturn-demo/demo/ems:8.6
         ports:
         - containerPort: 7222
-      volumeMounts:
+        volumeMounts:
+        - name: ems-config
+          mountPath: "/home/tibco"
+          readOnly: true
+      volumes:
       - name: ems-config
-        mountPath: "/home/tibco"
-        readOnly: true
-    volumes:
-    - name: ems-config
-      configMap:
-        name: ems-config
-        items:
-        - key: "queues.conf"
-          path: "queues2.conf"
+        configMap:
+          name: ems-config
+          items:
+          - key: "queues.conf"
+            path: "queues.conf"
 ---
 apiVersion: v1
 kind: Service
