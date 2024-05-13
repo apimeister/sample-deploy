@@ -5,6 +5,7 @@ resources:
 - ems.yaml
 - demo-svc.yaml
 - operator.yaml
+- queue.yaml
 
 vars:
   - name: env
