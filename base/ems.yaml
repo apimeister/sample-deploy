@@ -21,7 +21,7 @@ spec:
         - containerPort: 7222
         volumeMounts:
         - name: ems-config
-          mountPath: "/home/tibco"
+          mountPath: "/home/tibco/queues.conf"
           readOnly: true
       volumes:
       - name: ems-config
