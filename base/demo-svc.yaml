@@ -25,3 +25,5 @@ spec:
           value: admin
         - name: tibco.clientVar.EmsPassword
           value: admin
+        - name: tibco.clientVar.Domain
+          value: jens-super-duper-domain
