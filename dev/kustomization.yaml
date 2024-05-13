@@ -9,4 +9,4 @@ resources:
 
 images:
 - name: europe-docker.pkg.dev/mediasaturn-demo/demo/demo-svc:1.0
-  newTag: 2.0
+  newTag: "2.0"
