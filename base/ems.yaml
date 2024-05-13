@@ -50,4 +50,6 @@ metadata:
   name: ems-config
 data:
   queues.conf: |
+    queue.dev.1
     queue.test.1
+    queue.prod.1
