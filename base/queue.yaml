@@ -1,7 +1,0 @@
-apiVersion: tibcoems.apimeister.com/v1
-kind: Queue
-metadata:
-  name: queue1
-  namespace: dev
-spec: 
-  name: queue.dev.1
