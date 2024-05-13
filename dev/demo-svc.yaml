@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-svc
+  labels:
+    app: demo-svc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-svc
+  template:
+    metadata:
+      labels:
+        app: demo-svc
+    spec:
+      containers:
+      - name: demo-svc
+        image: europe-docker.pkg.dev/mediasaturn-demo/demo/demo-svc:1.0
+        imagePullPolicy: Always
+        env:
+        - name: tibco.clientVar.EmsServer
+          value: "tcp://ems:7222"
+        - name: tibco.clientVar.EmsUser
+          value: admin
+        - name: tibco.clientVar.EmsPassword
+          value: admin
