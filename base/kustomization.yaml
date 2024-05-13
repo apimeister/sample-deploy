@@ -8,8 +8,8 @@ resources:
 vars:
   - name: env
     objref:
-      kind: ConfigMap
-      name: Namespace
+      kind: Deployment
+      name: demo-svc
       apiVersion: v1
     fieldref:
-      fieldpath: metadata.name
+      fieldpath: metadata.namespace
