@@ -4,3 +4,12 @@ kind: Kustomization
 resources:
 - ems.yaml
 - demo-svc.yaml
+
+vars:
+  - name: env
+    objref:
+      kind: ConfigMap
+      name: Namespace
+      apiVersion: v1
+    fieldref:
+      fieldpath: metadata.name
