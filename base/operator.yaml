@@ -17,7 +17,7 @@ spec:
       serviceAccountName: tibco-ems-operator-account
       containers:
       - name: tibco-ems-operator
-        image: gcr.io/apimeister/tibco-ems-operator:57
+        image: europe-docker.pkg.dev/mediasaturn-demo/demo/tibco-ems-operator:57
         imagePullPolicy: Always
         resources:
           requests:
