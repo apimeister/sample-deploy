@@ -10,6 +10,6 @@ vars:
     objref:
       kind: Deployment
       name: demo-svc
-      apiVersion: v1
+      apiVersion: apps/v1
     fieldref:
       fieldpath: metadata.namespace
