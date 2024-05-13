@@ -10,3 +10,12 @@ resources:
 images:
 - name: europe-docker.pkg.dev/mediasaturn-demo/demo/demo-svc:1.0
   newTag: "2.0"
+
+vars:
+  - name: env
+    objref:
+      kind: ConfigMap
+      name: Namespace
+      apiVersion: v1
+    fieldref:
+      fieldpath: metadata.name
