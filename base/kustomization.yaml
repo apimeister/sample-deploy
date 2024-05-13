@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - ems.yaml
 - demo-svc.yaml
+- operator.yaml
 
 vars:
   - name: env
