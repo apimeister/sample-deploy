@@ -6,4 +6,3 @@ namespace: dev
 resources:
 - ../base
 - ns.yaml
-- demo-svc.yaml
