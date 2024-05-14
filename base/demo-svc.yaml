@@ -4,6 +4,8 @@ metadata:
   name: demo-svc
   labels:
     app: demo-svc
+    tibcoems.apimeister.com/scaling: "true"
+    tibcoems.apimeister.com/queue: queue.dev.1
 spec:
   replicas: 1
   selector:
