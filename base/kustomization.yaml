@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
 - ems.yaml
 - demo-svc.yaml
+- operator.yaml
