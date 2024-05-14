@@ -26,4 +26,6 @@ spec:
         - name: tibco.clientVar.EmsPassword
           value: admin
         - name: tibco.clientVar.Domain
-          value: jens-super-duper-domain
+          value: $(env)
+        - name: tibco.clientVar.Destination
+          value: queue.$(env).1
